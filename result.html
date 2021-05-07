@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Letter</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" 
+    rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container col-sm page">
+        <h2>Birdsong</h2>
+
+    <div id="letter">
+        <p>Dear <span id="herName">Her name</span>, <br></p>
+        <p>I know this is obviously the last thing you'd 
+            be expecting from me even that I am unknown till this moment. 
+            And I know judging by how short we've been friends, and how 
+        usual and random our conversations had been, you may find yourself asking, <em>What's going on with this person?</em></p>
+
+        <p>I must admit that I do not know you, not in the littlest of things. And oftentimes
+            I find myself backing out of having solid conversation with you because of me being overly 
+            sensitive that I do not want you brooding misconception when we have conversations that are not random. 
+        </p>
+
+        <p>
+           Before I bore you out with my talk, I want you to know some of us prefer bringing people we adore to 
+           our safe space in order to be able to spell out our emotions without feeling
+           awkward about it. The truth is, even though I know you perhaps have an idea of who I
+           am now which has defeated the purpose of the safe space, I still feel secured 
+           telling you this here behind this curtain that'd soon be rolled over.
+        </p>
+
+        <p>
+            I know we are friends (or maybe I am overthinking this), but I want us to be more. 
+            This may seem surprising to you, but some things are beyond us as human. And as much
+            as I want to prolong this, to be certain if this is me experiencing this feeling in its purest
+            state, but I do not have that luxury to wait. I have felt the brunch of waiting, that I'd learnt 
+            to choose rejection over regret.
+        </p>
+
+        <p>
+            I know the world is not fair. I understand its intricacies. I understand that we may not be on the
+            same page. And I understand that this may be of suprise to you and as well evoke a gentle fury in you. And I'll 
+            clearly understand if you let this slide and pretend nothing happened, or if you choose the other way to say,
+            <em>we don't need to have anything more than friendship.</em> Trust me, whatever you choose to do, it will not 
+            change the friendship we are building.
+        </p>
+
+        <p>
+            I'm shy, and if I have not tried to find a safe space like this, I am obviously not going to 
+            send this, and perhaps wait till someday that this feeling overgrows me before I write them out
+            in fluffy words that wouldn't hold any water again. Beyond sending Birdsong as just a letter, I have 
+            embodied it in a language (programming) I had always failed at comprehending. I know effort like this may be minute,
+            or seems like a showoff, but if you end up reading this letter, I want you to know that the zeal to pickup learning
+            programming again came as a result of me wanting to start something great with you in a different way.
+            I could have sent this Birdsong letter as a usual letter, but I am shy, and I wanted to send you this while
+            I am offline wasting away somewhere hoping you'd come to make the half full again.
+        </p>
+        
+        <p>
+            lastly, <span id="herNameTwo"></span>, maybe this is a formal request, I do not know, but I wish I can 
+            come onboard of your growth process, as I will anticipate you come onboard of mine also. I could write 
+            continuously to keep convincing you of how much I would cherish and nurture what we would have, but also,
+            I do not want to get carried away that I end up putting fluffy words that would water down this letter.
+            Birdsongs are meant to be sweet and sonorous, and so is what I have intended with this letter. I cannot tell 
+            if you smiled after reading this or not, but I smiled while writing it.  I believe great things start small and require time and patience. And I am positive we can work this out
+            like the twinkle twinkle little stars.
+        </p>
+        <p>
+             I do not know what your response is going to be like, but there are two buttons after this Birdsong. the blue
+             button will clear your curiosity on who this is and may be an indication of positive great beginning between us, while the
+             red button may mean, perhaps we do not need to have anything except friendship. Regardless of your response, I'll
+             still be a friend who will be concerned about you and your growth.  
+        </p>
+        <div class="container">
+            <a href="wa.me/+2349059784163"><button type="button" id="next">Yes! To Great Beginning</button></a>
+            <a href="friends.html"><button type="button" id="tears">No! I'm not interested</button></a>
+        </div>
+        
+    </div>
+
+    <footer class="copyright">
+        <p><strong>&copy; Brothers Beyond Borders</strong></p>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js" 
+  integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0" crossorigin="anonymous"></script>
+  <script>
+    window.addEventListener("load", () => {
+        const params = (new URL(document.location)).searchParams;
+        const summyName = params.get("summy");
+
+        document.getElementById("herName").innerHTML = summyName;
+    });
+    window.addEventListener("load", () => {
+        const params = (new URL(document.location)).searchParams;
+        const summyNameTwo = params.get("summy");
+
+        document.getElementById("herNameTwo").innerHTML = summyNameTwo;
+    })
+  </script>
+</body>
+</html>
